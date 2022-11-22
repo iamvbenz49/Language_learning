@@ -1,4 +1,4 @@
-class primeRange {
+class printReverseN {
     public static void main(String[] args) {
 
         printrev(5);
