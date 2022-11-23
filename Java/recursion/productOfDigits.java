@@ -1,4 +1,4 @@
-public class prodOfDigits {
+public class productOfDigits {
     public static void main(String[] args) {
         System.out.println(function(7437));
     }
