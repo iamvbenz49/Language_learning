@@ -1,0 +1,13 @@
+public class SingletonClass{
+    //class with ne object is called singleton class
+    private SingletonClass(){
+      
+    }
+    private static SingletonClass instance;
+    public static SingletonClass getInstance(){
+        if(instance==null){
+              instance = new SingletonClass();
+        }
+        return instance;
+    }
+}
