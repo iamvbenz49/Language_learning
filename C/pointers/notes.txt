@@ -1,0 +1,9 @@
+Introduction to pointers
+
+int - 4 bytes
+char - 1 bytes
+float - 4 bytes
+
+pointers are variables that store address of a variable
+    * is used to denote pointer
+    & is used to get address
