@@ -7,3 +7,7 @@ float - 4 bytes
 pointers are variables that store address of a variable
     * is used to denote pointer
     & is used to get address
+    
+when we do arithmetic operations on a pointer the operations takes place in term of datatype
+
+if we have char type we should store the pointer char , if it is int the we should store it in int
