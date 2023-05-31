@@ -11,3 +11,28 @@ pointers are variables that store address of a variable
 when we do arithmetic operations on a pointer the operations takes place in term of datatype
 
 if we have char type we should store the pointer char , if it is int the we should store it in int
+
+WHY CANT WE DEREFERENCE VOID POINTER?
+The reason you cannot directly dereference a void pointer is because void is an incomplete type. In C and C++, 
+void is used to represent the absence of a specific type. It is often used as a generic pointer type to 
+hold addresses of objects of any type.
+
+Since void does not have a defined size, attempting to dereference a void pointer would not provide any
+meaningful value. The size and type information are necessary for the compiler to correctly perform
+pointer arithmetic and access the underlying data.
+
+To access the data pointed to by a void pointer, you need to explicitly cast it to the appropriate type before 
+dereferencing it. For example, if you have a void pointer named ptr that points to an int, you would need to 
+cast it to an int* before dereferencing it like this:
+
+c++
+
+void* ptr;
+int* intPtr = static_cast<int*>(ptr);
+int value = *intPtr;
+
+This ensures that the compiler knows the correct size and type information, allowing it 
+to perform the dereference operation correctly.
+
+It's important to note that dereferencing a void pointer should be done with caution, as it can lead to
+type-related errors if not handled carefully
