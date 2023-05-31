@@ -13,6 +13,7 @@ when we do arithmetic operations on a pointer the operations takes place in term
 if we have char type we should store the pointer char , if it is int the we should store it in int
 
 WHY CANT WE DEREFERENCE VOID POINTER?
+
 The reason you cannot directly dereference a void pointer is because void is an incomplete type. In C and C++, 
 void is used to represent the absence of a specific type. It is often used as a generic pointer type to 
 hold addresses of objects of any type.
